@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+</IfModule>
+
+<FilesMatch "\.(svg)$">
+  Header set Access-Control-Allow-Origin "https://www.hc911.org"
+</FilesMatch>
+
+Redirect 301 /hc911 https://www.hc911.org
+
+RedirectPermanent /specialneeds https://www.hc911.org/special-needs-entry-request.php
+RedirectPermanent /special-needs-entry-request.php/ https://www.hc911.org/special-needs-entry-request.php
+RedirectPermanent /board-meetings https://www.hc911.org/board-meetings.php
+RedirectPermanent /jobfair https://www.hc911.org/job-openings.php
