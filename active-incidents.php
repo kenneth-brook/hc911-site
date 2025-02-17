@@ -37,10 +37,7 @@
     </div>
     <div id="page" class="site page-active-incidents">
         
-        <div id="ENSLoadOut">
-            <script>const clientID = "9c44f764-fbf7-424c-820b-b954a7899acd";</script>
-            <script src="https://ensloadout.911emergensee.com/ensloadout.js"></script>
-        </div>
+        <div id="ENSLoadOut"></div>
 
         <footer id="colophone" class="site-footer clearfix" role="contentinfo">
             <?php include "includes/footer.php"; ?>
