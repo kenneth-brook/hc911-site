@@ -190,8 +190,9 @@
  select {
      word-wrap: normal;
 }
- button, [type="button"], [type="reset"], [type="submit"] {
-     -webkit-appearance: button;
+button, [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button; /* WebKit browsers */
+    appearance: button; /* Standard property */
 }
  button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
      cursor: pointer;
@@ -235,6 +236,7 @@
  [type="search"] {
      outline-offset: -2px;
      -webkit-appearance: none;
+     appearance: none;
 }
  [type="search"]::-webkit-search-decoration {
      -webkit-appearance: none;
